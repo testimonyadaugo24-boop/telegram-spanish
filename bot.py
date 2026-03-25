@@ -3,11 +3,9 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTyp
 from deep_translator import GoogleTranslator
 
 import os
-# 🔑 Your bot token from @BotFather
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-# 🔢 Your real channel ID
-CHANNEL_ID = -1003833506135
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
 async def translate_post(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.channel_post and update.channel_post.chat.id == CHANNEL_ID:
