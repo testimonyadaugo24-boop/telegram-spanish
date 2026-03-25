@@ -2,8 +2,9 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 from deep_translator import GoogleTranslator
 
+import os
 # 🔑 Your bot token from @BotFather
-BOT_TOKEN = "8744657534:AAHeAodObOvm8QtRee1PFGPFfXBzTY7-3Yk"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # 🔢 Your real channel ID
 CHANNEL_ID = -1003833506135
