@@ -4,8 +4,8 @@ from deep_translator import GoogleTranslator
 
 import os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+BOT_TOKEN = "8744657534:AAHeAodObOvm8QtRee1PFGPFfXBzTY7-3Yk"
+CHANNEL_ID = -1003833506135
 
 async def translate_post(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.channel_post and update.channel_post.chat.id == CHANNEL_ID:
