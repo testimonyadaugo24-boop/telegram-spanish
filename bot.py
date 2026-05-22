@@ -4,7 +4,7 @@ from deep_translator import GoogleTranslator
 
 import os
 
-BOT_TOKEN = "8744657534:AAHeAodObOvm8QtRee1PFGPFfXBzTY7-3Yk"
+# BOT_TOKEN = "8744657534:AAHeAodObOvm8QtRee1PFGPFfXBzTY7-3Yk"
 CHANNEL_ID = -1003833506135
 
 async def translate_post(update: Update, context: ContextTypes.DEFAULT_TYPE):
