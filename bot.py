@@ -1,4 +1,4 @@
-""" 
+
 
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
@@ -49,7 +49,6 @@ async def translate_post(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token(BOT_TOKEN).build()
 app.add_handler(MessageHandler(filters.ALL, translate_post))
 
-"""
 
 print("Bot is running...")
 app.run_polling()
